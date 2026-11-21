@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d12">
+    <meta name="description" content="Project Nightfall - Um mundo aberto sobrenatural 3D.">
+    <title>Project Nightfall</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="game">
+        <div id="loading">
+            <h1>PROJECT NIGHTFALL</h1>
+            <p>Preparando o mundo...</p>
+        </div>
+        <div id="menu" hidden>
+            <h1>PROJECT NIGHTFALL</h1>
+            <p>O sobrenatural está despertando.</p>
+            <button id="startButton">ENTRAR NO MUNDO</button>
+        </div>
+        <div id="hud" hidden>
+            <span id="characterName">Explorador</span>
+            <button id="transformButton">Transformar</button>
+            <div id="status">Forma humana</div>
+        </div>
+        <div id="mobileControls" hidden>
+            <div id="joystick">●</div>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
